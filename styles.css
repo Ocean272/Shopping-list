@@ -47,7 +47,6 @@ i.fa-solid.fa-plus {
     opacity: 0.6;
     pointer-events: none;
     padding: 14px;
-    
 }
 i.fa-solid.fa-plus.active {
     opacity: 1;
@@ -88,36 +87,25 @@ i.fa-solid.fa-plus.active {
 }
 
 .footer button {
-    
     width: 150px;
     height:100%;
     border-radius: 3px;
     outline: none;
     background: rgb(182, 52, 182);
     color:white;
-    margin-left: 20px;
     cursor: pointer;
     padding: 10px 5px;
-    opacity: 0.6;
-    pointer-events: none;
 }
 
 .footer span{    
-    
     color: black;
     width: 80%;
     height:100%;
     border-radius: 3px;
     margin-left: 10px;
-    padding-top: 10px;
-    
-    
+    padding-top: 10px;  
 }
 
-.footer button.active{
-    opacity: 1;
-    pointer-events: auto;
-}
     
 
 

@@ -29,5 +29,6 @@ function newElement() {
   }
   document.getElementById("clearAll").addEventListener("click", function(){
     document.querySelector("ul").innerHTML ="" ;
+    pendingNum.textContent = close.length;
   })
 }
