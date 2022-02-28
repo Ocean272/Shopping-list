@@ -63,6 +63,7 @@ function deleteTask(index) {
 deleteAllBtn.onclick = () => {
     listArr = [ ];
     localStorage.setItem("#list-items", JSON.stringify(listArr));
+    listItem.innerHTML = "";
     showTasks ()
 }
 
