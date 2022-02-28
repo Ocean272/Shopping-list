@@ -17,13 +17,17 @@ function newElement() {
   span.appendChild(txt);
   li.appendChild(span);
  
+  var pendingNum = document.querySelector(".pending");
   let close = document.getElementsByClassName("close");
   var i;
   for (i = 0; i < close.length; i++) {
+    pendingNum.textContent = close.length;
     close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
+    this.parentElement.remove();
+    pendingNum.textContent = close.length;
     }
   }
+  document.getElementById("clearAll").addEventListener("click", function(){
+    document.querySelector("ul").innerHTML ="" ;
+  })
 }
-
