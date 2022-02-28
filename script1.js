@@ -5,14 +5,14 @@ function newElement() {
   let t = document.createTextNode(inputValue);
   li.appendChild(t);
   if (inputValue === '') {
-    alert("You must write something!");
+    alert("Please add something to your list!");
   } else {
     document.getElementById("list-items").appendChild(li);
   }
   document.getElementById("input-field").value = "";
   
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
+  let span = document.createElement("SPAN");
+  let txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
